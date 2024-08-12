@@ -1,8 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-// const BASE_URL = import.meta.env.VITE_API_URL;
-const BASE_URL = "http://localhost:3003";
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 const Api = {
   login: async (data) => {
