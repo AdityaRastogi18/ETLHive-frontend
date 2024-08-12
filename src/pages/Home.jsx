@@ -27,7 +27,11 @@ const Home = () => {
   );
 
   if (isLoading) {
-    return <Loader />;
+    return (
+      <div className="min-h-screen">
+        <Loader />
+      </div>
+    );
   }
   if (isError) {
     return <ErrorScreen message={error.message} retry={refetch} />;
