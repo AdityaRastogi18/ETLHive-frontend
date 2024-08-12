@@ -34,7 +34,7 @@ const SearchBar = ({ onSearch }) => {
         type="text"
         value={query}
         onChange={handleChange}
-        placeholder="Search by name, roll number or subject name..."
+        placeholder="Search by name, product name or phone number..."
         className="flex-1 px-4 py-2 border-none focus:outline-none"
       />
 

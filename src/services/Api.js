@@ -12,9 +12,11 @@ const Api = {
           "Content-Type": "application/x-www-form-urlencoded",
         },
       });
+      console.log("response", response);
       toast.success(response.data.message);
       return response.data;
     } catch (error) {
+      console.log("error", error);
       toast.error(error.response.data.message);
       throw error;
     }
